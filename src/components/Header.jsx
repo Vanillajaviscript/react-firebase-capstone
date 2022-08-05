@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import {UserAuth} from '../context/AuthContext'
 
-const NavBar = () => {
+const Header = () => {
 
   const {user, logOut } = UserAuth();
 
@@ -19,4 +19,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Header;

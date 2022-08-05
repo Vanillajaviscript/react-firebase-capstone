@@ -1,5 +1,5 @@
 import './App.css';
-import NavBar from "./components/NavBar";
+import Header from "./components/Header";
 import Account from './pages/Account';
 import Home from './pages/Home';
 import Login  from './pages/Login'
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="App">
     <AuthContextProvider>
-      <NavBar />
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
