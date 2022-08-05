@@ -3,7 +3,9 @@ import { UserAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 const Login = () => {
+  
   const navigate = useNavigate();
+
   const {googleLogin, user} = UserAuth();
   const handleGoogleLogin = async () => {
     try {
