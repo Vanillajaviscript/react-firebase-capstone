@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Login  from './pages/Login'
 import {Route, Routes } from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
+import Protected from "./components/Protected";
 
 const App = () => {
   return (
@@ -14,7 +15,14 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/account' element={<Account />} />
+        <Route 
+          path='/account' 
+          element={
+          <Protected>
+            <Account/>
+          </Protected>
+          } 
+        />
       </Routes>
       </AuthContextProvider>
     </div>
