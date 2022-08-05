@@ -7,6 +7,13 @@ import {Route, Routes } from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
 import Protected from "./components/Protected";
 import Main from "./components/Main";
+import {
+  RecoilRoot,
+  atom,
+  selector,
+  useRecoilState,
+  useRecoilValue,
+} from 'recoil';
 
 const App = () => {
   return (
