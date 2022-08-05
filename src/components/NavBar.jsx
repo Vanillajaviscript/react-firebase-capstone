@@ -1,7 +1,11 @@
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div>NavBar</div>
+    <div>
+      
+      <Link to='/login'>Login</Link>
+    </div>
   )
 }
 
