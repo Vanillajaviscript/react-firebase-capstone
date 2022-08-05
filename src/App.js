@@ -13,7 +13,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/signin' element={<Login />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/account' element={<Account />} />
       </Routes>
       </AuthContextProvider>
