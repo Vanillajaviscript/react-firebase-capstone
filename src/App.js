@@ -6,6 +6,7 @@ import Login  from './pages/Login'
 import {Route, Routes } from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
 import Protected from "./components/Protected";
+import Main from "./components/Main";
 
 const App = () => {
   return (
